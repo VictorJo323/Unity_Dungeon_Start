@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ff94d6ae47bd240a611488ea5d2119, type: 3}
   m_Name: Player1Stat
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  baseAttack: 0
-  baseDefence: 0
-  critRate: 0
+  maxHealth: 100
+  baseAttack: 5
+  baseDefence: 2
+  curGold: 10000
+  level: 1
+  critRate: 15
+  title: Student
+  charName: Chad
+  charDescription: A poor student who is studying coding for the first time in his
+    life... He is so depressed by the thought that he is understanding zilch about
+    what he is learning at this moment.
   curHealth: 0

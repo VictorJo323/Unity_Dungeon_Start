@@ -10,8 +10,16 @@ public class StatData : ScriptableObject
     public int maxHealth;
     public int baseAttack;
     public int baseDefence;
+    public int curGold;
+    public int level;
     public float critRate;
 
+
+    [Header("Additional Info")]
+    public string title;
+    public string charName;
+    public string charDescription;
+    
     [Header("Current Stats")]
     [HideInInspector] public int curHealth;
 }
