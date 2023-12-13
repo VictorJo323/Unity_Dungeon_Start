@@ -20,7 +20,7 @@ MonoBehaviour:
   critRate: 15
   title: Student
   charName: Chad
-  charDescription: A poor student who is studying coding for the first time in his
-    life... He is so depressed by the thought that he is understanding zilch about
-    what he is learning at this moment.
+  charDescription: A student who is studying coding for the first time in his life...
+    He is so depressed by the thought that he is understanding zilch about what he
+    is learning at this moment.
   curHealth: 0

@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class EquipItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Equip(ItemData item)
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public void Unequip(ItemData item)
     {
         
-    }
+    } 
 }
