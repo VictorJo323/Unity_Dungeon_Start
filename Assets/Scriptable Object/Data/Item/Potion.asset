@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0517117d7acdd40429338cbb8f3b947c, type: 3}
   m_Name: Potion
   m_EditorClassIdentifier: 
-  itemName: 
-  description: 
-  itemIcon: {fileID: 0}
-  itemType: 0
+  itemName: Healing Potion
+  description: The very basic for the dungeon explorers.
+  itemIcon: {fileID: 21300000, guid: 1f20845faab68174f9f132af8cc18bae, type: 3}
+  itemType: 2
+  isConsumable: 0
+  id: 3
   isStackable: 0
   maxStack: 0
+  equipmentStats: []

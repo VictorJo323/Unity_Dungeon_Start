@@ -13,6 +13,7 @@ public class Inventory : MonoBehaviour
 {
     public ItemSlotUI[] uiSlot;
     public ItemSlot[] slots;
+    public ItemDatabase itemDatabase;
 
     public GameObject inventoryWindow;
     public GameObject confirmWindow;
@@ -43,7 +44,49 @@ public class Inventory : MonoBehaviour
             uiSlot[i].index = i;
             uiSlot[i].Clear();
         }
+
+        InitialInventorySetup();
     }
+
+    private void InitialInventorySetup()
+    {
+        AddItemToInventory(itemDatabase.FindItemById(5));
+        AddItemToInventory(itemDatabase.FindItemById(4));
+        AddItemToInventory(itemDatabase.FindItemById(2));
+        AddItemToInventory(itemDatabase.FindItemById(1));
+    }
+
+    private void AddItemToInventory(ItemData itemData)
+    {
+        ItemSlot emptySlot = GetEmptySlot();
+        if (emptySlot != null)
+        {
+            emptySlot.item = itemData;
+            UpdateUI();
+        }
+    }
+
+    void AddItemToSlot(ItemData itemData, int slotIndex)
+    {
+        if (slotIndex >= 0 && slotIndex < slots.Length)
+        {
+            slots[slotIndex].item = itemData;
+            UpdateUISlot(slotIndex);
+        }
+    }
+
+    public void UpdateUISlot(int slotIndex)
+    {
+        if(slots[slotIndex].item != null)
+        {
+            uiSlot[slotIndex].Set(slots[slotIndex]);
+        }
+        else
+        {
+            uiSlot[slotIndex].Clear();
+        }
+    }
+
     public void SelectItem(int index)
     {
         if (slots[index].item == null)
@@ -60,7 +103,7 @@ public class Inventory : MonoBehaviour
         selectedItemStatNames.text = string.Empty;
         selectedItemStatValues.text = string.Empty;
     }
-    void UpdateUI()
+    public void UpdateUI()
     {
         for (int i = 0; i < slots.Length; i++)
         {

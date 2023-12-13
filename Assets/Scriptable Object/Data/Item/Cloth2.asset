@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0517117d7acdd40429338cbb8f3b947c, type: 3}
   m_Name: Cloth2
   m_EditorClassIdentifier: 
-  itemName: 
-  description: 
-  itemIcon: {fileID: 0}
-  itemType: 0
+  itemName: Leather Armor
+  description: An armor made with leather.
+  itemIcon: {fileID: 21300000, guid: 9076aea67f83155438ddd4472b56ff9d, type: 3}
+  itemType: 1
+  isConsumable: 0
+  id: 2
   isStackable: 0
   maxStack: 0
+  equipmentStats:
+  - change: 0
+    value: 20
+  - change: 2
+    value: 5

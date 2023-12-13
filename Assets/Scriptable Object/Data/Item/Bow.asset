@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0517117d7acdd40429338cbb8f3b947c, type: 3}
   m_Name: Bow
   m_EditorClassIdentifier: 
-  itemName: 
-  description: 
-  itemIcon: {fileID: 0}
+  itemName: Bow
+  description: A ranged arm to shoot an arrow.
+  itemIcon: {fileID: 21300000, guid: f7484ab2d886b334aaffc51128643618, type: 3}
   itemType: 0
+  isConsumable: 0
   isStackable: 0
   maxStack: 0
+  equipmentStats:
+  - change: 1
+    value: 5
+  - change: 3
+    value: 10

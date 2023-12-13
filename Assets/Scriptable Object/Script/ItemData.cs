@@ -34,6 +34,7 @@ public class ItemData : ScriptableObject
     public Sprite itemIcon;
     public ItemType itemType;
     public bool isConsumable;
+    public int id;
 
     [Header("Stacking")]
     public bool isStackable;

@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0517117d7acdd40429338cbb8f3b947c, type: 3}
   m_Name: Staff
   m_EditorClassIdentifier: 
-  itemName: 
-  description: 
-  itemIcon: {fileID: 0}
+  itemName: Wood staff
+  description: Nothing more than just a carved wood stick.
+  itemIcon: {fileID: 21300000, guid: 4763ed549304a4846bc239771bf4a695, type: 3}
   itemType: 0
+  isConsumable: 0
+  id: 4
   isStackable: 0
   maxStack: 0
+  equipmentStats:
+  - change: 1
+    value: 4
+  - change: 2
+    value: 2

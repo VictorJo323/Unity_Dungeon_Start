@@ -9,7 +9,7 @@ public class ItemSlotUI : MonoBehaviour
     public Button button;
     public Image icon;
     public GameObject equipmentMarker;
-    private ItemSlot curSlot;
+    public ItemSlot curSlot;
 
     public int index;
     public bool equipped = false;
@@ -19,14 +19,9 @@ public class ItemSlotUI : MonoBehaviour
         curSlot = slot;
         icon.gameObject.SetActive(true);
         icon.sprite = slot.item.itemIcon;
-        if(equipped)
-        {
-            equipmentMarker.SetActive(true);
-        }
-        else
-        {
-            equipmentMarker.SetActive(false);
-        }
+
+        equipped = slot.isEquipped;
+        equipmentMarker.SetActive(equipped);
     }
 
     public void Clear()
